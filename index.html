@@ -52,6 +52,111 @@
             </li>
           </ul>
         </address>
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu-container">
+            <button class="btn-close" type="button" data-menu-close>
+              <svg class="mobile-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <nav class="mobile-menu-nav">
+              <ul class="menu-nav-list list">
+                <li class="menu-nav-item">
+                  <a class="menu-nav-link current" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="menu-nav-item">
+                  <a class="menu-nav-link" href="">Portfolio</a>
+                </li>
+                <li class="menu-nav-item">
+                  <a class="menu-nav-link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="wrapper">
+              <address class="mobile-menu-contacts">
+                <ul class="mobile-contacts-list list">
+                  <li class="mobile-contacts-item">
+                    <a
+                      class="mobile-contacts-link accent"
+                      href="tel:+110001111111"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                  <li class="mobile-contacts-item">
+                    <a
+                      class="mobile-contacts-link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+
+              <div class="mobile-social">
+                <ul class="mobile-social-list list">
+                  <li class="mobile-social-item">
+                    <a
+                      class="mobile-social-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg class="social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a
+                      class="mobile-social-link"
+                      href="https://x.com/i"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg class="social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a
+                      class="mobile-social-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg class="social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a
+                      class="mobile-social-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg class="social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -59,7 +164,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -496,9 +603,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-button">
+        <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -509,7 +616,7 @@
         <form class="modal-form">
           <div class="modal-field">
             <label for="user-name" class="modal-label">Name</label>
-            <div class="modal-field-wraper">
+            <div class="modal-field-wrapper">
               <input
                 type="text"
                 class="modal-input"
@@ -525,7 +632,7 @@
 
           <div class="modal-field">
             <label for="user-phone" class="modal-label">Phone</label>
-            <div class="modal-field-wraper">
+            <div class="modal-field-wrapper">
               <input
                 type="tel"
                 class="modal-input"
@@ -541,7 +648,7 @@
 
           <div class="modal-field">
             <label for="user-email" class="modal-label">Email</label>
-            <div class="modal-field-wraper">
+            <div class="modal-field-wrapper">
               <input
                 type="email"
                 class="modal-input"
@@ -566,7 +673,7 @@
             ></textarea>
           </div>
 
-          <div class="modal-field modal-field-checkbox">
+          <div class="modal-field-checkbox">
             <input
               type="checkbox"
               name="policy"
@@ -580,8 +687,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="policy-link">Privacy Policy</a>
+              <span class="modal-check-text">
+                I accept the terms and conditions of the
+                <a href="" class="policy-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
@@ -589,5 +698,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
