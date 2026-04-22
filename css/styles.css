@@ -338,9 +338,6 @@ a {
 /* Акцентний стиль для телефону */
 .mobile-contacts-link.accent-link {
   color: #4d5ae5;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
 }
 
 .mobile-contacts-link:hover,
