@@ -3,13 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <title>WebStudio</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -17,8 +12,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
-    <!--cssfile-->
   </head>
   <body>
     <header class="page-header">
@@ -55,98 +57,9 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu" data-menu>
-        <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>
-            <svg class="close-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <nav class="mobile-menu-nav">
-            <ul class="menu-nav-list">
-              <li class="menu-nav-item">
-                <a class="menu-nav-link current" href="./index.html">Studio</a>
-              </li>
-              <li class="menu-nav-item">
-                <a class="menu-nav-link" href="">Portfolio</a>
-              </li>
-              <li class="menu-nav-item">
-                <a class="menu-nav-link" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="wrapper">
-            <address class="mobile-menu-contacts">
-              <ul class="mobile-contacts-list">
-                <li class="mobile-contacts-item">
-                  <a class="mobile-contacts-link" href="tel:+110001111111"
-                    >+11 (000) 111-11-11</a
-                  >
-                </li>
-                <li class="mobile-contacts-item">
-                  <a
-                    class="mobile-contacts-link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <div class="mobile-social">
-              <ul class="mobile-social-list">
-                <li class="social-item">
-                  <a
-                    class="social-link"
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                  >
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a
-                    class="social-link"
-                    href="https://twitter.com/"
-                    target="_blank"
-                  >
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a
-                    class="social-link"
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                  >
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a
-                    class="social-link"
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                  >
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
 
     <main>
-      <!-- Hero -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -156,7 +69,6 @@
         </div>
       </section>
 
-      <!-- Features -->
       <section class="feature">
         <div class="container container-feature">
           <h2 class="visually-hidden">Our features</h2>
@@ -213,7 +125,6 @@
         </div>
       </section>
 
-      <!-- Our Team -->
       <section class="team">
         <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
@@ -221,13 +132,12 @@
             <li class="team-list-item">
               <img
                 src="./images/team/mark.jpg"
-                srcset="./images/team/mark.jpg 1x, ./images/team/mark.jpg 2x"
+                srcset="./images/team/mark.jpg 1x, ./images/team/mark@2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
                 loading="lazy"
               />
-
               <div class="team-info">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="team-position">Product Designer</p>
@@ -266,8 +176,8 @@
 
             <li class="team-list-item">
               <img
-                src="./images/team/tom@1x.jpg"
-                srcset="./images/team/tom.jpg 1x, ./images/team/tom.jpg 2x"
+                src="./images/team/tom.jpg"
+                srcset="./images/team/tom.jpg 1x, ./images/team/tom@2x.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -311,10 +221,10 @@
 
             <li class="team-list-item">
               <img
-                src="./images/team/camila@1x.jpg"
+                src="./images/team/camila.jpg"
                 srcset="
-                  ./images/team/camila.jpg 1x,
-                  ./images/team/camila.jpg 2x
+                  ./images/team/camila.jpg    1x,
+                  ./images/team/camila@2x.jpg 2x
                 "
                 alt="Camila Garcia"
                 width="264"
@@ -326,7 +236,7 @@
                 <p class="team-position">Marketing</p>
                 <ul class="social-list">
                   <li class="social-item">
-                    <a class="social-item-svg">
+                    <a class="social-item-svg" href="#">
                       <svg width="16" height="16" class="social-svg">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -359,10 +269,10 @@
 
             <li class="team-list-item">
               <img
-                src="./images/team/daniel@1x.jpg"
+                src="./images/team/daniel.jpg"
                 srcset="
-                  ./images/team/daniel.jpg 1x,
-                  ./images/team/daniel.jpg 2x
+                  ./images/team/daniel.jpg    1x,
+                  ./images/team/daniel@2x.jpg 2x
                 "
                 alt="Daniel Wilson"
                 width="264"
@@ -408,7 +318,6 @@
         </div>
       </section>
 
-      <!-- Portfolio -->
       <section class="portfolio">
         <div class="container container-portfolio">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -474,8 +383,11 @@
                     "
                   />
                   <img
-                    src="./images/portfolio/cashless-2-min.jpg 1x"
-                    srcset="./images/portfolio/cashless-2@2x-min.jpg 2x"
+                    src="./images/portfolio/cashless-2-min.jpg"
+                    srcset="
+                      ./images/portfolio/cashless-2-min.jpg    1x,
+                      ./images/portfolio/cashless-2@2x-min.jpg 2x
+                    "
                     alt="Cashless"
                     width="360"
                     height="300"
@@ -511,8 +423,11 @@
                     "
                   />
                   <img
-                    src="./images/portfolio/madiationapp-3-min.jpg 1x"
-                    srcset="./images/portfolio/meditationapp-3@2x-min.jpg 2x"
+                    src="./images/portfolio/meditationapp-3-min.jpg"
+                    srcset="
+                      ./images/portfolio/meditationapp-3-min.jpg    1x,
+                      ./images/portfolio/meditationapp-3@2x-min.jpg 2x
+                    "
                     alt="Meditation App"
                     width="360"
                     height="300"
@@ -548,9 +463,12 @@
                     "
                   />
                   <img
-                    src="./images/portfolio/taxiservice-4-min.jpg 1x"
-                    srcset="./images/portfolio/taxiservice-4@2x-min.jpg 2x"
-                    alt="Meditation App"
+                    src="./images/portfolio/taxiservice-4-min.jpg"
+                    srcset="
+                      ./images/portfolio/taxiservice-4-min.jpg    1x,
+                      ./images/portfolio/taxiservice-4@2x-min.jpg 2x
+                    "
+                    alt="Taxi Service"
                     width="360"
                     height="300"
                     loading="lazy"
@@ -585,8 +503,9 @@
                     "
                   />
                   <img
-                    src="./images/portfolio/screenillustration-5-min.jpg 1x"
+                    src="./images/portfolio/screenillustration-5-min.jpg"
                     srcset="
+                      ./images/portfolio/screenillustration-5-min.jpg    1x,
                       ./images/portfolio/screenillustration-5@2x-min.jpg 2x
                     "
                     alt="Screen Illustrations"
@@ -624,9 +543,12 @@
                     "
                   />
                   <img
-                    src="./images/portfolio/onlinecourses-6-min.jpg 1x"
-                    srcset="./images/portfolio/onlinecourses-6@2x-min.jpg 2x"
-                    alt="Screen Illustrations"
+                    src="./images/portfolio/onlinecourses-6-min.jpg"
+                    srcset="
+                      ./images/portfolio/onlinecourses-6-min.jpg    1x,
+                      ./images/portfolio/onlinecourses-6@2x-min.jpg 2x
+                    "
+                    alt="Online Courses"
                     width="360"
                     height="300"
                     loading="lazy"
@@ -806,6 +728,94 @@
         </form>
       </div>
     </div>
+
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close" data-menu-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="menu-nav-list">
+            <li class="menu-nav-item">
+              <a class="menu-nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="wrapper">
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-social">
+            <ul class="mobile-social-list">
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
